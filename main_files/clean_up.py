@@ -1,7 +1,8 @@
-import sys
 import subprocess
+import sys
+
 # TODO
-import constants as cons
+from main_files import constants as cons
 
 
 class Cleaner(object):
