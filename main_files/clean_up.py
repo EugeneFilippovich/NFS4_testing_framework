@@ -1,15 +1,13 @@
 import subprocess
 import sys
-
-# TODO
-from main_files import constants as cons
+from main_files.constants import Constants
 
 
 class Cleaner(object):
     @staticmethod
     def clean_up_folder():
-        command = subprocess.Popen(["ssh -T " + cons.Constants.SERVER_NAME + '@' + cons.Constants.SERVER_IP + ' ' +
-                                    cons.Constants.CLEAN_SERVER_FOLDER], shell=True, stdout=subprocess.PIPE,
+        command = subprocess.Popen(["ssh -T " + Constants.SERVER_NAME + '@' + Constants.SERVER_IP + ' ' +
+                                    Constants.CLEAN_SERVER_FOLDER], shell=True, stdout=subprocess.PIPE,
                                    stderr=subprocess.PIPE)
         result = command.stdout.readlines()
         if result == 0:
@@ -20,4 +18,4 @@ class Cleaner(object):
 
     @staticmethod
     def delete_test_folder():
-        subprocess.call([cons.Constants.CLEAN_TEST_FOLDER], shell=True)
+        subprocess.call([Constants.CLEAN_TEST_FOLDER], shell=True)

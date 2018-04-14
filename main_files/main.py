@@ -1,13 +1,12 @@
-from test_cases import *
 from main_files import *
 
 
 if __name__ == '__main__':
 
     # SetUp condition with read-write permissions
-    set_up.SetUp.insert_file(constants.Constants.SERVER_IP, constants.Constants.SERVER_NAME, constants.Constants.DIRECTORY_PATH_STATEMENTS,
-                             constants.Constants.FILE_PATH_STATEMENT, constants.Constants.READ_WRITE_ACCESS)
-    set_up.SetUp.ssh_export_to_host(constants.Constants.SERVER_NAME, constants.Constants.SERVER_IP, constants.Constants.RESTART_NFS)
+    set_up.SetUp.insert_file(Constants.SERVER_IP, Constants.SERVER_NAME, Constants.DIRECTORY_PATH_STATEMENTS,
+                             Constants.FILE_PATH_STATEMENT, Constants.READ_WRITE_ACCESS)
+    set_up.SetUp.ssh_export_to_host(Constants.SERVER_NAME, Constants.SERVER_IP, Constants.RESTART_NFS)
 
     test_1.TestCase1.run_test_case()
     clean_up.Cleaner.clean_up_folder()
@@ -30,9 +29,9 @@ if __name__ == '__main__':
     clean_up.Cleaner.clean_up_folder()
 
     # SetUp condition with read-only permissions
-    set_up.SetUp.insert_file(constants.Constants.SERVER_IP, constants.Constants.SERVER_NAME, constants.Constants.DIRECTORY_PATH_STATEMENTS,
-                             constants.Constants.FILE_PATH_STATEMENT, constants.Constants.READ_ONLY_ACCESS)
-    set_up.SetUp.ssh_export_to_host(constants.Constants.SERVER_NAME, constants.Constants.SERVER_IP, constants.Constants.RESTART_NFS)
+    set_up.SetUp.insert_file(Constants.SERVER_IP, Constants.SERVER_NAME, Constants.DIRECTORY_PATH_STATEMENTS,
+                             Constants.FILE_PATH_STATEMENT, Constants.READ_ONLY_ACCESS)
+    set_up.SetUp.ssh_export_to_host(Constants.SERVER_NAME, Constants.SERVER_IP, Constants.RESTART_NFS)
 
     test_7.TestCase7.run_test_case()
     clean_up.Cleaner.clean_up_folder()

@@ -3,7 +3,7 @@ import subprocess
 import os
 
 
-class MainCases(object):
+class Commands(object):
 
     @staticmethod
     def change_folder(path):
@@ -28,7 +28,7 @@ class MainCases(object):
     def make_directory(folder_name):
         set_folder_name = str(folder_name)
         try:
-            subprocess.check_output(['mkdir ./' + set_folder_name], shell=True, stderr=subprocess.STDOUT)
+            subprocess.check_output(['sudo mkdir ./' + set_folder_name], shell=True, stderr=subprocess.STDOUT)
             return 0
         except subprocess.CalledProcessError as Error:
             return Error.output
@@ -37,7 +37,7 @@ class MainCases(object):
     def remove_directory(folder_name):
         set_folder_name = str(folder_name)
         try:
-            subprocess.check_output(['rmdir ./' + set_folder_name], shell=True, stderr=subprocess.STDOUT)
+            subprocess.check_output(['sudo rmdir ./' + set_folder_name], shell=True, stderr=subprocess.STDOUT)
             return 0
         except subprocess.CalledProcessError as Error:
             return Error.output
@@ -46,7 +46,7 @@ class MainCases(object):
     def touch_file(file_name):
         set_file_name = str(file_name)
         try:
-            subprocess.check_output(['touch ./' + set_file_name], shell=True, stderr=subprocess.STDOUT)
+            subprocess.check_output(['sudo touch ./' + set_file_name], shell=True, stderr=subprocess.STDOUT)
             return 0
         except subprocess.CalledProcessError as Error:
             return Error.output
@@ -56,7 +56,7 @@ class MainCases(object):
         set_data = str(data)
         try:
             with open(file_name, 'w') as f:
-                subprocess.call(['echo', set_data], stdout=f)
+                subprocess.call(['sudo echo', set_data], stdout=f)
             return 0
         except BaseException as Error:
             return str(Error)
@@ -94,7 +94,7 @@ class MainCases(object):
         set_file_name = str(file_name)
         set_destination_path = str(destination_path)
         try:
-            subprocess.check_output(['mv ' + set_file_name + ' ' + set_destination_path], shell=True,
+            subprocess.check_output(['sudo mv ' + set_file_name + ' ' + set_destination_path], shell=True,
                                     stderr=subprocess.STDOUT)
             return 0
         except subprocess.CalledProcessError as Error:
@@ -102,14 +102,14 @@ class MainCases(object):
 
     @staticmethod
     def rename_file(old_file_name, new_file_name):
-        return MainCases.move_file(old_file_name, new_file_name)
+        return Commands.move_file(old_file_name, new_file_name)
 
     @staticmethod
     def remove_file(file_name):
         set_file_name = str(file_name)
         set_removed_asterisks = (set_file_name.replace('*', ''))
         try:
-            subprocess.check_output(['rm -f ./' + set_removed_asterisks], shell=True,
+            subprocess.check_output(['sudo rm -f ./' + set_removed_asterisks], shell=True,
                                     stderr=subprocess.STDOUT)
             return 0
         except subprocess.CalledProcessError as Error:
@@ -119,7 +119,7 @@ class MainCases(object):
     def execute_script(script_name):
         set_script_name = str(script_name)
         try:
-            subprocess.check_output(['sh ' + set_script_name], shell=True, stderr=subprocess.STDOUT)
+            subprocess.check_output(['sudo sh ' + set_script_name], shell=True, stderr=subprocess.STDOUT)
             return 0
         except subprocess.CalledProcessError as Error:
             return Error.output

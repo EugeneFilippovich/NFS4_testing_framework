@@ -2,8 +2,7 @@
 
 class Constants(object):
     SERVER_NAME = 'root'
-    # TODO
-    SERVER_IP = '192.168.1.103'
+    SERVER_IP = '192.168.56.102'
 
     TOUCH_COMMAND = 'touch '
     READ_ONLY_ACCESS = '/share *(ro,sync)'
@@ -13,12 +12,11 @@ class Constants(object):
     FILE_PATH_STATEMENT = '/exports'
 
     CLEAN_SERVER_FOLDER = 'rm -f /share/*'
-    # TODO
-    CLEAN_TEST_FOLDER = 'rm -rf /home'
+    CLEAN_TEST_FOLDER = 'rm -rf /home/eugene/NFS4_Testing_Framework/TEST_FOLDER'
 
     FILE_NAME = 'test'
     FILE_NAME2 = 'test_2'
-    DIRECTORY_NAME = 'TEST_FOLDER'
+    TEST_DIRECTORY_NAME = 'TEST_FOLDER'
     TEST_STRING = 'echo "File has been written. Success!"'
 
     INFO_READ_ONLY_PROPERTY = 'Condition *(ro, sync)'
@@ -33,6 +31,5 @@ class Constants(object):
 
     CLIENT_SHARE_PATH = '/mnt/share'
     HOST_SHARE_PATH = '/share'
-    # TODO
-    LOGGER_PATH = '/home/masya/Masyalee/PyCharm_projects/NFSv4_share/'
-    TEST_FOLDER_PATH = '/home/masya/Masyalee/PyCharm_projects/NFSv4_share/'
+    LOGGER_PATH = '/home/eugene/PycharmProjects/NFS4_Testing_Framework'
+    TEST_FOLDER_PATH = '/home/eugene/PycharmProjects/NFS4_Testing_Framework'

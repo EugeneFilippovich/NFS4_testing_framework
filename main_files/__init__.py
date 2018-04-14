@@ -1,10 +1,10 @@
 import logging
-from main_files import constants
-from main_files import main_cases
-from main_files import unique_logger
-from main_files import assertion
-from main_files import clean_up
-from main_files import set_up
+from .constants import Constants
+from .main_linux_commands import Commands
+from .unique_logger import CustomLogger
+from .assertion import Assertion
+from .clean_up import Cleaner
+from .set_up import SetUp
 from test_cases import test_1
 from test_cases import test_2
 from test_cases import test_3

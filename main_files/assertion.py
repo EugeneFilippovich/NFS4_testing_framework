@@ -1,4 +1,4 @@
-from main_files import main_cases
+from main_files.main_linux_commands import Commands
 
 
 class Assertion(object):
@@ -14,11 +14,11 @@ class Assertion(object):
 
     @staticmethod
     def assert_working_dir(class_name):
-        class_name.logger.info(main_cases.MainCases.pwd())
+        class_name.logger.info(Commands.pwd())
 
     @staticmethod
     def assert_list_of_files(class_name):
-        class_name.logger.info(main_cases.MainCases.ls())
+        class_name.logger.info(Commands.ls())
 
     @staticmethod
     def assert_make_dir(step, class_name, steps_quantity):
@@ -58,7 +58,7 @@ class Assertion(object):
 
     @staticmethod
     def assert_read_file(class_name, file_name):
-        class_name.logger.info('Data inside file: {}'.format(main_cases.MainCases.read_file(file_name)))
+        class_name.logger.info('Data inside file: {}'.format(Commands.read_file(file_name)))
 
     @staticmethod
     def assert_cat_file(step, class_name, steps_quantity):
