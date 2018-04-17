@@ -6,10 +6,10 @@ import subprocess
 class SetUp(object):
 
     @staticmethod
-    def insert_file(host, user, directory, filename, data):
+    def insert_file(host_name, user_name, directory, filename, data):
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect(host, username=user)
+        ssh.connect(hostname=host_name, username=user_name)
         sftp = ssh.open_sftp()
         try:
             sftp.mkdir(directory)

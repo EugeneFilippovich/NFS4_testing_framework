@@ -1,8 +1,8 @@
 
 
 class Constants(object):
-    SERVER_NAME = 'root'
-    SERVER_IP = '192.168.56.102'
+    HOST_USER_NAME = 'root'
+    HOST_IP = '192.168.56.102'
 
     TOUCH_COMMAND = 'touch '
     READ_ONLY_ACCESS = '/share *(ro,sync)'
@@ -17,7 +17,7 @@ class Constants(object):
     FILE_NAME = 'test'
     FILE_NAME2 = 'test_2'
     TEST_DIRECTORY_NAME = 'TEST_FOLDER'
-    TEST_STRING = 'echo "File has been written. Success!"'
+    TEST_DATA_TO_WRITE = 'echo "File has been written. Success!"'
 
     INFO_READ_ONLY_PROPERTY = 'Condition *(ro, sync)'
     INFO_READ_WRITE_PROPERTY = 'Condition *(rw, sync)'

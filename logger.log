@@ -1,0 +1,143 @@
+2018-04-17 12:35:28,089 test_cases.test_1 INFO     Create a file in the share directory. Condition *(rw, sync)
+2018-04-17 12:35:28,090 test_cases.test_1 DEBUG    Step 1 passed successfully
+2018-04-17 12:35:28,090 test_cases.test_1 INFO     Directory has been changed
+2018-04-17 12:35:28,102 test_cases.test_1 INFO     Current working directory is /mnt/share
+ 
+2018-04-17 12:35:28,148 test_cases.test_1 DEBUG    Step 2 passed successfully
+2018-04-17 12:35:28,148 test_cases.test_1 INFO     File has been created successfully 
+2018-04-17 12:35:28,182 test_cases.test_1 DEBUG    Step 3 passed successfully
+2018-04-17 12:35:28,182 test_cases.test_1 INFO     File is viewed by using cat 
+2018-04-17 12:35:28,197 test_cases.test_1 INFO     List of files is viewed: 
+ test
+
+2018-04-17 12:35:28,318 test_cases.test_2 INFO     Rename a file from the share directory. Condition *(rw, sync)
+2018-04-17 12:35:28,425 test_cases.test_2 DEBUG    Step 1 passed successfully
+2018-04-17 12:35:28,425 test_cases.test_2 INFO     Remote command has been executed successfully
+2018-04-17 12:35:28,425 test_cases.test_2 DEBUG    Step 2 passed successfully
+2018-04-17 12:35:28,425 test_cases.test_2 INFO     Directory has been changed
+2018-04-17 12:35:28,432 test_cases.test_2 INFO     Current working directory is /mnt/share
+ 
+2018-04-17 12:35:28,470 test_cases.test_2 DEBUG    Step 3 passed successfully
+2018-04-17 12:35:28,470 test_cases.test_2 INFO     The file has been renamed successfully
+2018-04-17 12:35:28,482 test_cases.test_2 INFO     List of files is viewed: 
+ test_2
+ 
+2018-04-17 12:35:28,591 test_cases.test_3 INFO     Remove a file from the share directory. Condition *(rw, sync)
+2018-04-17 12:35:28,706 test_cases.test_3 DEBUG    Step 1 passed successfully
+2018-04-17 12:35:28,706 test_cases.test_3 INFO     Remote command has been executed successfully
+2018-04-17 12:35:28,706 test_cases.test_3 DEBUG    Step 2 passed successfully
+2018-04-17 12:35:28,706 test_cases.test_3 INFO     Directory has been changed
+2018-04-17 12:35:28,714 test_cases.test_3 INFO     Current working directory is /mnt/share
+ 
+2018-04-17 12:35:28,734 test_cases.test_3 DEBUG    Step 3 passed successfully
+2018-04-17 12:35:28,734 test_cases.test_3 INFO     The file has been removed successfully
+2018-04-17 12:35:28,747 test_cases.test_3 INFO     List of files is viewed: 
+  
+2018-04-17 12:35:28,859 test_cases.test_4 INFO     Copy a file to the share directory. Condition *(rw, sync)
+2018-04-17 12:35:28,973 test_cases.test_4 DEBUG    Step 1 passed successfully
+2018-04-17 12:35:28,973 test_cases.test_4 INFO     Remote command has been executed successfully
+2018-04-17 12:35:28,984 test_cases.test_4 DEBUG    Step 2 passed successfully
+2018-04-17 12:35:28,984 test_cases.test_4 INFO     The directory has been created successfully 
+2018-04-17 12:35:28,985 test_cases.test_4 DEBUG    Step 3 passed successfully
+2018-04-17 12:35:28,985 test_cases.test_4 INFO     Directory has been changed
+2018-04-17 12:35:28,993 test_cases.test_4 INFO     Current working directory is /mnt/share
+ 
+2018-04-17 12:35:29,004 test_cases.test_4 DEBUG    Step 4 passed successfully
+2018-04-17 12:35:29,004 test_cases.test_4 INFO     The file has been copied successfully
+2018-04-17 12:35:29,013 test_cases.test_4 DEBUG    Step 5 passed successfully
+2018-04-17 12:35:29,013 test_cases.test_4 INFO     File is viewed by using cat 
+2018-04-17 12:35:29,024 test_cases.test_4 INFO     List of files is viewed: 
+ test
+
+2018-04-17 12:35:29,160 test_cases.test_5 INFO     Move a file into the share directory. Condition *(rw, sync)
+2018-04-17 12:35:29,167 test_cases.test_5 DEBUG    Step 1 passed successfully
+2018-04-17 12:35:29,168 test_cases.test_5 INFO     The directory has been created successfully 
+2018-04-17 12:35:29,168 test_cases.test_5 DEBUG    Step 2 passed successfully
+2018-04-17 12:35:29,168 test_cases.test_5 INFO     Directory has been changed
+2018-04-17 12:35:29,185 test_cases.test_5 INFO     Current working directory is /home/eugene/PycharmProjects/NFS4_Testing_Framework/TEST_FOLDER
+ 
+2018-04-17 12:35:29,182 test_cases.test_5 DEBUG    Step 3 passed successfully
+2018-04-17 12:35:29,182 test_cases.test_5 INFO     File has been created successfully 
+2018-04-17 12:35:29,204 test_cases.test_5 DEBUG    Step 4 passed successfully
+2018-04-17 12:35:29,204 test_cases.test_5 INFO     The file has been moved successfully 
+2018-04-17 12:35:29,212 test_cases.test_5 INFO     List of files is viewed: 
+  
+2018-04-17 12:35:29,212 test_cases.test_5 DEBUG    Step 5 passed successfully
+2018-04-17 12:35:29,213 test_cases.test_5 INFO     Directory has been changed
+2018-04-17 12:35:29,222 test_cases.test_5 INFO     Current working directory is /mnt/share
+ 
+2018-04-17 12:35:29,232 test_cases.test_5 INFO     List of files is viewed: 
+ test
+
+2018-04-17 12:35:29,356 test_cases.test_6 INFO     Execute a file from the share directory. Condition *(rw, sync)
+2018-04-17 12:35:29,357 test_cases.test_6 DEBUG    Step 1 passed successfully
+2018-04-17 12:35:29,357 test_cases.test_6 INFO     Directory has been changed
+2018-04-17 12:35:29,366 test_cases.test_6 INFO     Current working directory is /mnt/share
+ 
+2018-04-17 12:35:29,387 test_cases.test_6 DEBUG    Step 2 passed successfully
+2018-04-17 12:35:29,388 test_cases.test_6 INFO     File has been created successfully 
+2018-04-17 12:35:29,411 test_cases.test_6 INFO     List of files is viewed: 
+ test
+
+2018-04-17 12:35:29,431 test_cases.test_6 DEBUG    Step 3 passed successfully
+2018-04-17 12:35:29,432 test_cases.test_6 INFO     Data inside file:  
+2018-04-17 12:35:29,433 test_cases.test_6 INFO     Data inside file:  ['echo "File has been written. Success!"\n']
+2018-04-17 12:35:29,445 test_cases.test_6 DEBUG    Step 4 passed successfully
+2018-04-17 12:35:29,446 test_cases.test_6 INFO     The file has been executed successfully
+2018-04-17 12:35:29,954 test_cases.test_7 INFO     Move a file into the share directory. Condition *(ro, sync)
+2018-04-17 12:35:29,963 test_cases.test_7 DEBUG    Step 1 passed successfully
+2018-04-17 12:35:29,964 test_cases.test_7 INFO     The directory has been created successfully 
+2018-04-17 12:35:29,964 test_cases.test_7 DEBUG    Step 2 passed successfully
+2018-04-17 12:35:29,964 test_cases.test_7 INFO     Directory has been changed
+2018-04-17 12:35:29,972 test_cases.test_7 INFO     Current working directory is /home/eugene/PycharmProjects/NFS4_Testing_Framework/TEST_FOLDER
+ 
+2018-04-17 12:35:29,980 test_cases.test_7 DEBUG    Step 3 passed successfully
+2018-04-17 12:35:29,981 test_cases.test_7 INFO     File has been created successfully 
+2018-04-17 12:35:29,990 test_cases.test_7 DEBUG    Step 4 is failed
+2018-04-17 12:35:29,990 test_cases.test_7 ERROR    mv: inter-device move failed: 'test' to '/mnt/share/test'; unable to remove target: Read-only file system
+
+2018-04-17 12:35:29,998 test_cases.test_7 INFO     List of files is viewed: 
+ test
+
+2018-04-17 12:35:29,998 test_cases.test_7 DEBUG    Step 5 passed successfully
+2018-04-17 12:35:29,998 test_cases.test_7 INFO     Directory has been changed
+2018-04-17 12:35:30,005 test_cases.test_7 INFO     Current working directory is /mnt/share
+ 
+2018-04-17 12:35:30,013 test_cases.test_7 INFO     List of files is viewed: 
+  
+2018-04-17 12:35:30,218 test_cases.test_8 INFO     Remove a file from the share directory. Condition *(ro, sync)
+2018-04-17 12:35:30,325 test_cases.test_8 DEBUG    Step 1 passed successfully
+2018-04-17 12:35:30,326 test_cases.test_8 INFO     Remote command has been executed successfully
+2018-04-17 12:35:30,326 test_cases.test_8 DEBUG    Step 2 passed successfully
+2018-04-17 12:35:30,326 test_cases.test_8 INFO     Directory has been changed
+2018-04-17 12:35:30,333 test_cases.test_8 INFO     Current working directory is /mnt/share
+ 
+2018-04-17 12:35:30,343 test_cases.test_8 DEBUG    Step 3 is failed
+2018-04-17 12:35:30,343 test_cases.test_8 ERROR    rm: cannot remove './test': Read-only file system
+
+2018-04-17 12:35:30,355 test_cases.test_8 INFO     List of files is viewed: 
+ test
+
+2018-04-17 12:35:30,464 test_cases.test_9 INFO     Rename a file from the share directory. Condition *(ro, sync)
+2018-04-17 12:35:30,569 test_cases.test_9 DEBUG    Step 1 passed successfully
+2018-04-17 12:35:30,569 test_cases.test_9 INFO     Remote command has been executed successfully
+2018-04-17 12:35:30,569 test_cases.test_9 DEBUG    Step 2 passed successfully
+2018-04-17 12:35:30,569 test_cases.test_9 INFO     Directory has been changed
+2018-04-17 12:35:30,579 test_cases.test_9 INFO     Current working directory is /mnt/share
+ 
+2018-04-17 12:35:30,591 test_cases.test_9 DEBUG    Step 3 is failed
+2018-04-17 12:35:30,591 test_cases.test_9 ERROR    mv: cannot move 'test' to 'test_2': Read-only file system
+
+2018-04-17 12:35:30,603 test_cases.test_9 INFO     List of files is viewed: 
+ test
+
+2018-04-17 12:35:30,715 test_cases.test_10 INFO     Write data into a file from the share directory. Condition *(ro, sync)
+2018-04-17 12:35:30,821 test_cases.test_10 DEBUG    Step 1 passed successfully
+2018-04-17 12:35:30,821 test_cases.test_10 INFO     Remote command has been executed successfully
+2018-04-17 12:35:30,821 test_cases.test_10 DEBUG    Step 1 passed successfully
+2018-04-17 12:35:30,821 test_cases.test_10 INFO     Directory has been changed
+2018-04-17 12:35:30,830 test_cases.test_10 INFO     Current working directory is /mnt/share
+ 
+2018-04-17 12:35:30,831 test_cases.test_10 DEBUG    Step 3 is failed
+2018-04-17 12:35:30,831 test_cases.test_10 ERROR    [Errno 30] Read-only file system: 'test'
+2018-04-17 12:35:30,833 test_cases.test_10 INFO     Data inside file:  []

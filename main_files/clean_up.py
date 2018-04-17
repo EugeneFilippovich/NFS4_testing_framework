@@ -6,7 +6,7 @@ from main_files.constants import Constants
 class Cleaner(object):
     @staticmethod
     def clean_up_folder():
-        command = subprocess.Popen(["ssh -T " + Constants.SERVER_NAME + '@' + Constants.SERVER_IP + ' ' +
+        command = subprocess.Popen(["ssh -T " + Constants.HOST_USER_NAME + '@' + Constants.HOST_IP + ' ' +
                                     Constants.CLEAN_SERVER_FOLDER], shell=True, stdout=subprocess.PIPE,
                                    stderr=subprocess.PIPE)
         result = command.stdout.readlines()

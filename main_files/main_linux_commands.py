@@ -128,7 +128,7 @@ class Commands(object):
     def ssh_connect_to_server(host_name, host_ip, command_to_execute):
         set_host_name = str(host_name)
         set_host_ip = str(host_ip)
-        command = subprocess.Popen(['ssh -T ' + set_host_name + '@' + set_host_ip + ' '+ command_to_execute],
+        command = subprocess.Popen(['ssh -T ' + set_host_name + '@' + set_host_ip + ' ' + command_to_execute],
                                    shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         result = command.stdout.readlines()
         if result == 0:
